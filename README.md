@@ -4,6 +4,7 @@ This repo contains the model preparation and prediction files for Covid19 UK's r
 
 + Covid19 cases history on regional / upper tier local authority level
 + Population density, age distribution for each of those levels
++ Area (sq km) of each region
 + Estimate R0 and K values for each datapoint
 + Rolling means of estimated R0 
 + Rolling Means of cases
@@ -11,10 +12,11 @@ This repo contains the model preparation and prediction files for Covid19 UK's r
 + Important measures implemented by UK Government on date-by-date bases (school closure, etc..)
     + Timedelta from of each of these measures from start and end dates of implementation
     + Binary indication (1 or 0) of each measure being Active/Inactive for each datapoint
++ A basic xgboost regressor model has been created to predict the daily new cases in each region of UK
 
 ## Next Steps
 
-+ A basic Regression / XGBoost / MLP / LSTM to be implemented on the current dataset
++ Improve the basic model, create more features, try different target variables for prediction
 + Geographic visualisation (contour/scatter maps) of the newly created features, cases, risks and predictions to follow
 + More features will shortly be added to account for imformation like number of superstores, food production facilities to caculate actual localised food security risk based on covid19 situation
 + Rerun the model on optimised datasets
